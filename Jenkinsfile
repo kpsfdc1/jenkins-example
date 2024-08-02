@@ -1,9 +1,9 @@
 pipeline {
-	agent {  label 'jenkins-slave1' }
+	agent {  label 'linux-node' }
 	stages {
 		stage('---clean----'){
 			tools {
-				maven 'maven_3.9.6'
+				maven 'maven_3.9.8'
 			}
 			steps {
 				sh 'mvn --version'
@@ -21,7 +21,7 @@ pipeline {
 		}
 		stage('---package---'){
 			tools {
-				maven 'maven_3.8..5'
+				maven 'maven_3.8.1'
 			}
 			
 			steps {
