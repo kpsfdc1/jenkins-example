@@ -1,5 +1,5 @@
 pipeline {
-	agent {  label 'Jenkins' }
+	agent {  label 'dev-label' }
 	stages {
 		stage('---clean----'){
 			tools {
