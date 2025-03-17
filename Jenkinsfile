@@ -1,5 +1,5 @@
 pipeline {
-	agent {  label 'any' }
+	agent {  label 'Built-In Node' }
 	stages {
 		stage('---clean----'){
 			tools {
