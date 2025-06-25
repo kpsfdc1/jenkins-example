@@ -12,7 +12,7 @@ pipeline {
 		}
 		stage('---test---') {
 			tools {
-				maven 'maven_3.9.6'
+				maven 'maven_3.9.8'
 			}
 			steps {
 				sh 'mvn --version'
@@ -21,7 +21,7 @@ pipeline {
 		}
 		stage('---package---'){
 			tools {
-				maven 'maven_3.9.0'
+				maven 'maven_3.9.5'
 			}
 			
 			steps {
