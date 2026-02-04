@@ -1,9 +1,9 @@
 pipeline {
-	agent {  label 'dev-label' }
+	agent {  label 'new-linux-node' }
 	stages {
 		stage('---clean----'){
 			tools {
-				maven 'maven_3.9.11'
+				maven 'mvn-version-3.9.10'
 			}
 			steps {
 				sh 'mvn --version'
@@ -12,7 +12,7 @@ pipeline {
 		}
 		stage('---test---') {
 			tools {
-				maven 'maven_3.9.10'
+				maven 'man-version-3.9.11'
 			}
 			steps {
 				sh 'mvn --version'
@@ -21,7 +21,7 @@ pipeline {
 		}
 		stage('---package---'){
 			tools {
-				maven 'maven_3.9.9'
+				maven 'man-version-3.9.12'
 			}
 			
 			steps {
